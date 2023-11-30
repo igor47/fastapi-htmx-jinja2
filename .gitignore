@@ -1,0 +1,3 @@
+# virtualenv via direnv-asdf
+.envrc
+.direnv
