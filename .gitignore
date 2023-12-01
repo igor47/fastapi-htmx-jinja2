@@ -1,3 +1,5 @@
 # virtualenv via direnv-asdf
 .envrc
 .direnv
+
+__pycache__
