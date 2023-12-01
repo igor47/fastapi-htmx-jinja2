@@ -1,18 +1,14 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>RockRabbit - Welcome</title>
+{% extends layout %}
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
+{% block content %}
+<h1>Welcome To RockRabbit</h1>
 
-  <body>
-    <h1>Welcome To RockRabbit</h1>
-
-    <button class="btn btn-primary">Start a new project</button>
-  </body>
-</html>
-
+<button
+  class="btn btn-primary"
+  hx-get="/new"
+  hx-trigger="click"
+  hx-target="#page"
+  hx-swap="innerHTML"
+  hx-push-url="true"
+>Start a new project</button>
+{% endblock content %}
